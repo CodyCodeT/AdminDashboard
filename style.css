@@ -25,9 +25,12 @@ h1 {
     font-size: 32px;
     /* justify-self: center; */
 }
-.header {
-    background-color: white;
+div.header {
+    background-color: goldenrod;
     grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 3fr 1fr;
+    padding: 15px;
 }
 .viewport {
     background-color: #f3e8ff;
@@ -89,7 +92,19 @@ li>button {
 
     &:hover {
         color: #5b21b6;
+        cursor: pointer;
         background: none;
         background-color: none;
     }
+}
+div.buttons {
+    justify-content: center;
+    align-self: center;
+    grid-area: 3 / 2 / 4 / 3;
+}
+.header>p {
+    align-self: end;
+}
+.header>h2 {
+    grid-area: 3 / 1 / 4 / 2;
 }
