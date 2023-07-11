@@ -33,7 +33,7 @@
     background-color: goldenrod;
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
-    grid-template: 1fr 1fr / 50px 4fr 1fr;
+    grid-template: 1fr 1fr / 55px 4fr 2fr;
     padding: 15px;
   }
   
@@ -116,6 +116,9 @@
     color:#5b21b6;
     text-align: center;
     font-size: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
   }
   
   .header > p {
@@ -137,22 +140,45 @@
   .profile {
     border-radius: 50%;
     height: 50px;
+    margin: 0;
+    padding: 0;
     grid-area: 2 / 1 / 3 / 2;
-  }
-  
-  .search {
-    grid-area: 1 / 2 / 2 / 3;
     align-self: center;
   }
   
-  .uname {
-    grid-area: 1 / 3 / 2/ 4;
+  .search {
+    grid-area: 1 / 1 / 2 / 3;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
   }
-  
-  img.search {
-    justify-self: end;
+  .search > form > input {
+    border: none;
+    border-radius: 15px;
+    height: 25px;
+    width: 100%;
   }
   .greeting {
     grid-area: 2 / 2 / 3 / 3;
+    align-self: center;
   }
-  
+  .buttongroup1 {
+    border: none;
+    border-radius: 25px;
+    height: 35px;
+    width: 100px;
+    background-color: #5b21b6;
+    color: white;
+  }
+  .hright {
+    grid-area: 1 / 3 / 2 / 4;
+    display: grid;
+    grid-template-columns: 50px 50px 1fr;
+    padding-left: 75px;
+    align-items: center;
+  }
+  .hright > img {
+    border-radius: 50%;
+    padding: 0;
+  }
