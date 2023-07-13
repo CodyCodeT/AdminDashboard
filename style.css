@@ -40,7 +40,7 @@
   .viewport {
     background-color: #f3e8ff;
     display: grid;
-    grid-template: 50px 1fr 100px 1fr 50px / 4fr 1fr;
+    grid-template: 50px 1fr 100px 1fr 50px / 2fr 1fr;
   }
   
   .projects {
@@ -86,16 +86,10 @@
   li {
     margin-left: 0px;
     padding: 15px;
-    
-  }
-  
-  .menu > ul {
     list-style: none;
   }
-  
   li > button {
     font-size: 16px;
-    list-style: none;
     color: white;
     border: 0;
     background: none;
@@ -184,4 +178,29 @@
     color: white;
     display: flex;
     flex-direction: row;
+  }
+  .sidebar2 {
+    grid-area: 2 / 2 / 5 / 3;
+    display: grid;
+    grid-template-rows: repeat(auto, minmax(400px, 1fr));
+    gap: 15px;
+  }
+  .sidebar2 > div {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+  }
+  li > p {
+    font-size: 12px;
+  }
+  li > h1 {
+    font-size: 14px;
+  }
+  .announcements > ul > li {
+    border-bottom: #f3e8ff 1px solid;
+  }
+  .announcements > ul > li:last-child {
+    border-bottom: none;
   }
