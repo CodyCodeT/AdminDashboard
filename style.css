@@ -14,7 +14,7 @@
     display: grid;
     overflow: hidden;
     grid-template-rows: 150px 1fr;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 255px 1fr;
   }
   
   .sidebar {
@@ -80,15 +80,13 @@
     border: 0;
     border-radius: 3px;
     background-color: white;
-  }
-  
-  button:hover {
-    background-color: #f3e8ff;
+
   }
   
   li {
     margin-left: 0px;
-    padding-bottom: 15px;
+    padding: 15px;
+    
   }
   
   .menu > ul {
@@ -96,7 +94,7 @@
   }
   
   li > button {
-    font-size: 22px;
+    font-size: 16px;
     list-style: none;
     color: white;
     border: 0;
@@ -104,7 +102,7 @@
   }
   
   li > button:hover {
-    color: #5b21b6;
+    color: #f3e8ff;
     cursor: pointer;
   }
   
@@ -119,10 +117,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-  }
-  
-  .header > p {
-    align-self: end;
   }
   
   .header > h2 {
@@ -163,6 +157,9 @@
     grid-area: 2 / 2 / 3 / 3;
     align-self: center;
   }
+  .greeting > h2 {
+    font-size: 20px;
+  }
   .buttongroup1 {
     border: none;
     border-radius: 25px;
@@ -181,4 +178,10 @@
   .hright > img {
     border-radius: 50%;
     padding: 0;
+  }
+  .title {
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: row;
   }
